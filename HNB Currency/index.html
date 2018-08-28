@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HNB Exchange Rate</title>
+	<script src="http://hnbex.eu/api/v1/rates/daily/"></script>
+	<script src="currency.js"></script>
+	<script src="jquery-3.3.1.js"></script>
+	<h2 align="center">Currency Converter</h2>
+	 
+	<style>
+		#box
+		{
+			width:300px;
+			height:150px;
+			margin:5px auto;
+		
+		
+		}
+	</style>
+	<div id="box">
+	</head>
+
+		<body onload=loadCurrency()>
+		<div class="row">
+		<div class="col-2">Iznos: </div>
+		<div class="col-3">
+			<input id="unos1" type="text" class="unos-01"/>
+		</div>			
+		<div class="row">
+			<div class="col-2">From: </div>
+			<select id="from"></select> To: <select id="to"></select>
+		</div>
+		<p>           </p>	
+		<div class="row"><input type="submit" value="Submit" action="convertCurrency()"></div>
+		<div class="row"><p>               </p>
+			Result : <span id="result"></span>
+		</div>
+	         	
+
+
+	</body>
+</html>
